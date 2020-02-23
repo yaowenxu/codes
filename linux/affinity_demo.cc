@@ -1,17 +1,4 @@
-/**
- * Author: Yaowen Xu
- * Github: https://github.com/yaowenxu
- * Organization: 北航系统结构研究所
- * Date: 2020-02-22 21:41:03
- * LastEditTime: 2020-02-22 21:41:35
- * Description: 文件描述信息
- */
-
-/**
- * FileName: affinity_demo.c
- */
- 
-#define _GNU_SOURCE
+// #define _GNU_SOURCE
 
 #include <stdint.h>
 #include <stdio.h>
@@ -62,7 +49,7 @@ static inline void set_cpu_mask(pid_t pid, cpu_set_t *mask)
 
 int main(int argc, char *argv[])
 {
-    unsigned int active_cpu = 0;
+    unsigned int active_cpu = 1;
     cpu_set_t cpu_mask;
 
     get_cpu_mask(0, &cpu_mask);
@@ -81,3 +68,4 @@ int main(int argc, char *argv[])
     }
     return 0;
 }
+
