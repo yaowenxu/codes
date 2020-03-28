@@ -3,7 +3,7 @@
  * Github: https://github.com/yaowenxu
  * Organization: 北航系统结构研究所
  * Date: 2020-03-28 17:14:40
- * LastEditTime: 2020-03-28 18:46:34
+ * LastEditTime: 2020-03-28 18:56:58
  * Description: 实现链表结构
  */
 
@@ -33,8 +33,17 @@ struct LinkedList
         tail = nullptr;
         size = 0;
     }
+    ~LinkedList(){
+        struct node* p;
+        while(head != nullptr){
+            p = head;
+            head = head->next;
+            free(p);
+        }
+        cout << "链表析构" << endl;
+    }
     void push_back(int v){
-        struct node* p = (struct node*)malloc(sizeof(struct node));
+        struct node* p = (struct node*)malloc(sizeof(struct node)); // 此处使用的是堆上内存；
         p->val = v;
         if(tail == nullptr){
             tail = p;
