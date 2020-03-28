@@ -3,7 +3,7 @@
  * Github: https://github.com/yaowenxu
  * Organization: 北航系统结构研究所
  * Date: 2020-03-28 22:03:37
- * LastEditTime: 2020-03-29 00:19:32
+ * LastEditTime: 2020-03-29 00:28:44
  * Description: 二叉树结构实现，深度优先搜索实现（递归-非递归），广度优先搜索实现；
  */
 
@@ -110,7 +110,7 @@ void DFS_postorder_stack(struct node* root){
             root = root->left;
         }
         while(root!= nullptr && (root->right == nullptr || root->right == pre)){
-            // 当节点没有右孩子或者右孩子被刚刚访问过，则方位该节点；
+            // 当节点没有右孩子或者右孩子被刚刚访问过，则访问该节点；
             cout << root->val << " ";
             pre = root;
             if (nodestack.empty()){
