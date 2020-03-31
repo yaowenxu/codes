@@ -3,7 +3,7 @@
  * Github: https://github.com/yaowenxu
  * Organization: 北航系统结构研究所
  * Date: 2020-03-30 15:06:58
- * LastEditTime: 2020-03-30 15:47:06
+ * LastEditTime: 2020-03-31 17:03:45
  * Description: Dijkstra算法，堆优化版本；堆优化的版本只是在寻找当前dist[i]以确定下一即将被遍历的节点过程，中进行了堆排序优化；
  * tips: 本题中使用优先队列来进行实现；
  */
@@ -61,7 +61,7 @@ void Dijkstra(int s = 1, int d =  5){
     //打出从起始节点到目的节点之间的路径；
     int p = d;
     cout << d; 
-    while (visit[p] !=  p)
+    while (from[p] !=  p)
     {
          p = from[p];
          cout << "-" << p ;

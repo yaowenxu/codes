@@ -3,7 +3,7 @@
  * Github: https://github.com/yaowenxu
  * Organization: 北航系统结构研究所
  * Date: 2020-03-30 13:23:19
- * LastEditTime: 2020-03-30 15:01:31
+ * LastEditTime: 2020-03-31 17:04:06
  * Description: Dijkstra 算法实现；
  */
 
@@ -45,11 +45,12 @@ void Dijkstra(int s = 1, int d =  5){
     //打出从起始节点到目的节点之间的路径；
     int p = d;
     cout << d; 
-    while (visit[p] !=  p)
+    while (from[p] !=  p)
     {
          p = from[p];
          cout << "-" << p ;
     }
+    
     cout << endl;
     //print dist;
     cout << "dist:" << endl;
