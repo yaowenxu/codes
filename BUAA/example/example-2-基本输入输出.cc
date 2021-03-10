@@ -12,6 +12,7 @@ void func_redirect_to_console_linux();
 void func_redirect_to_console_windows();
 void input_on_c();  // 输出；
 void output_on_c(); // 输出；
+void input_on_cxx();
 char buffer[256];   // 全局变量；
 
 int main()
@@ -31,6 +32,11 @@ int main()
     output_on_c();
     return 0;
 }
+
+void input_on_cxx(){
+    
+}
+
 
 void input_on_c()
 { // c语言输入方法；
