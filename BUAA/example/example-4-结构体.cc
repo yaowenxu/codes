@@ -15,7 +15,8 @@ struct Books
 
 int main(){
     
-    struct Books book;
+    // struct Books book;
+    Books book; // C++ 允许在声明结构体的时候，省略关键字struct;
     strcpy(book.title, "yaowen");
     strcpy(book.author, "xu ");
     
