@@ -29,6 +29,8 @@
 // queue：对元素采取先进先出的管理策略，可认为是一个普通的缓冲区。
 // priority_queue：容器中的元素可以拥有不同的优先权。其效果相当于一个buffer，下一个元素是优先级最高的元素。当多个元素有相同优先级时，具体次序无明确定义。
 
+// 我们常用的C++库为 STL库，对于工程上C++库的选择还包含个人第三方的库以及知名的boost函数库；
+
 // 参考：https://www.cnblogs.com/linuxAndMcu/p/10254542.html
 
 #include <cstdio>
