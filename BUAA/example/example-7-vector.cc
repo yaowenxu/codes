@@ -1,5 +1,6 @@
 // c++ vector的练习；
 // 编译命令：c++ -std=c++11 example-7-vector.cc -o out ; ./out ; rm out
+// 参考：https://www.cnblogs.com/linuxAndMcu/p/10259630.html
 
 #include <iostream>
 #include <vector>
