@@ -1,0 +1,5 @@
+#clude <stdio.h>
+t ma()
+{
+t prtf(" Hi ");
+}
