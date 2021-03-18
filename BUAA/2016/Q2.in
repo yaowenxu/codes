@@ -1,0 +1,2 @@
+enum BOOL{true,false};
+enum date{JAN = 1,FEB,MAR,APR,MAY,JUN,JULY,AUG,SEP,OCT,NOV,DEC,MON=1,TUE,WED,THU,FRI,SAT,SUN,found = 1949, ok};
