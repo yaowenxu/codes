@@ -1,2 +1,2 @@
 # codes
-codes for internship
+codes for algos
